@@ -35,6 +35,6 @@ let studentInfo = {
     marks: [57, 84, 69]
 }
 console.log(studentInfo.isSouthSudanese);
-console.log(studentInfo.marks);
+console.log(studentInfo.marks[2]);
 console.log(studentInfo.age);
 console.log(studentInfo.studentName);

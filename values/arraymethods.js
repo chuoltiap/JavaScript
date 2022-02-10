@@ -1,3 +1,21 @@
+// 5.Array methods
+// -Array
+// -length
+// -concat
+// -indexOf
+// -Slice
+// -splice
+// -join
+// -toStrings
+// -include
+// -lastIndex
+// -isArray
+// -fill
+// -push
+// -shift
+// -unshift
+
+
 let marks = [70, 80, 70.5, 60, 40]
  //Array length
 console.log(marks.length);
@@ -35,6 +53,33 @@ console.log(catFamily.indexOf('Cheetah'));
 
 // print Cheetah
 console.log(catFamily[catFamily.indexOf('Cheetah')]);
+
+//join array element together
+let name = ['Chuol', 'Tayar']
+console.log(name.join(' '));
+
+//concat two arrays
+let sisters = ['Sarah', 'Rachael', 'Vicky']
+let brothers = ['Ali', 'Hussein', 'Peter']
+let family = sisters.concat(brothers);
+console.log(family);
+
+
+//Splice the element of array
+family.splice(4,1, 'Rhoda', 'Linda', 'Lydia')
+console.log(family);
+
+// //Slice the elements os ans array
+// let months = ['Jan', 'March', 'April',  'May', 'June'];
+// let newMonths = months.splice(2, 2,);
+// console.log(newMonths);
+
+
+// months.splice(2, 4,);
+// console.log(months);
+
+// console.log(months.isArray());
+
 // //Accessing array element
 // console.log(marks[0]);
 
@@ -46,20 +91,10 @@ console.log(catFamily[catFamily.indexOf('Cheetah')]);
 // marks[0] = 90
 // console.log(marks)
 
-// 5.Array methods
-// -Array
-// -length
-// -concat
-// -indexOf
-// -Slice
-// -splice
-// -jion
-// -tostring
-// -include
-// -lastIndex
-// -isArray
-// -fill
-// -push
-// -shift
-// -unshift
+
+function processData(inputString) {
+    // This line of code prints the first line of output
+    console.log("Hello, World.");
+    
+    // Write the second line of output that prints the contents of 'inputString' here.
 

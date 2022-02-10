@@ -1,3 +1,7 @@
+//substr()... starting index and the number of slices
+//substring()... starting index and the stopping index -1
+
+
 var firstName = "Chuol"
 var secondName = "Tayar"
 var fullName = firstName + " " + secondName

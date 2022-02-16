@@ -11,3 +11,12 @@ for( let index =0; index < names.length){
 }
 let num = 2
 console.log(index);
+
+let nums = [1, 2, 3, 4, 5]
+for (let i = 0; i < nums.length; i++){
+if(i == 2){
+    console.log('i have stopped');
+    break;
+}
+console.log(nums[i])
+}

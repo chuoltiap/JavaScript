@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+body {padding: 30px}
+</style>
+<body class="bg-dark margin-60px text-white">
+    <h1 class = "title text-center"> VANILLA CALCULATOR</h1>
+    <form class="jumbotron container">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Price</label>
+          <input type="text" class="form-control price" id="exampleFormControlInput1" placeholder="enter amount">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Quantity</label>
+            <input type="number" class="form-control quantity" id="exampleFormControlInput1" placeholder="enter quantity">
+          </div> 
+          <p align="right " class="total">$0</p>
+      </form>
+<script>
+//grab the element(1)
+const price = document.querySelector('.price');
+const quantity =document.querySelector('.quantity');
+const  myTotal = document.querySelector('.total')
+//create the function(3)
+function calculatePrice(){
+    const myPrice = price.value 
+    // console.log(myPrice)
+    const myQuantity = quantity.value
+    // console.log(myQuantity);
+    const totalPrice = myQuantity*myPrice
+    // console.log(totalPrice);
+  myTotal.innerText = totalPrice
+}
+
+
+//add event listeners(2)
+price.addEventListener('input', calculatePrice)
+quantity.addEventListener('input', calculatePrice)
+myTotal.addEventListener('input', calculatePrice)
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

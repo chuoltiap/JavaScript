@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+body {padding: 30px}
+</style>
+<body class="bg-dark margin-60px text-white">
+    <h1 class = "title text-center">REGISTRATION FORM</h1>
+    <form class="jumbotron container">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Username</label>
+          <input type="text" class="form-control  " id="username" placeholder="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Password</label>
+            <input type="password" class="form-control password" id="exampleFormControlInput1" placeholder="enter password">
+          </div> 
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control email" id="exampleFormControlInput1" placeholder="enter email">
+          </div> 
+          <p align="right " class="name">Name: <span class="nm"></span></p>
+          <p align="right " class="password">Password: <span class="pw"></span></p>
+          <p align="right " class="email">Email: <span class="em"></span></p>
+      </form>
+      <script>
+          //grab the element(1)
+          const userName = document.querySelector('#username')
+          const password = document.querySelector('.password')
+          const email = document.querySelector('.email')
+          const name = document.querySelector('.nm')
+          const passCode = document.querySelector('.pw')
+          const emailCode = document.querySelector('.em')
+          //create function(3)
+          function myInfo() {
+              const myUserName = userName.value
+            //   console.log(myUserName);
+              const myPassword = password.value
+            //   console.log(myPassword);
+              const myEmail = email.value
+            //   console.log(myEmail);
+            name.innerText = myUserName;
+            passCode.innerText = myPassword;
+            emailCode.innerText = myEmail;
+          }
+          //create event listeners(2)
+          userName.addEventListener('input', myInfo)
+          password.addEventListener('input', myInfo)
+          email.addEventListener('input', myInfo)
+          name.addEventListener('input', myInfo)
+          passCode.addEventListener('input', myInfo)
+          emailCode.addEventListener('input', myInfo)
+      </script>
+      </body>

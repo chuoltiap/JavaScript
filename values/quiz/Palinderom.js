@@ -43,11 +43,11 @@
 function reverse(str){
     let reversed = ''
     for(let i = str.length - 1; i >= 0; i--){
-     reversed =reversed + str[i]
+     reversed = reversed + str[i]
     }
     return reversed
-  }
-  function reverse(str){
+
+    function reverse(str){
       if(str === reverse(str)){
         console.log(`${str} is a palindrome `)
       }
@@ -56,6 +56,7 @@ function reverse(str){
            }
            return reversed
   }
-  console.log(palindrome('DAD'));
+}
+  console.log(reverse('cat'));
 
 //shorthand property

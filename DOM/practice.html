@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+    body {margin: 35px}
+    .btn-red, .btn-white, .btn-blue, .btns{ font-size: 45px;}
+</style>
+<body class="bg-dark text-center text-white">
+    <h1>Practicing DOM Element</h1>
+    <div class="jumbotron">
+        <button class="btn btn-danger text-center btn-red" onclick="goRed()">Go Red</button>
+    </div>
+    <div class="jumbotron">
+        <button class="btn-white text-center btn-white" onclick="goWhite()">Go White</button>
+    </div>
+    <div class="jumbotron">
+        <button class="btn btn-primary text-center btn-blue">Go Blue</button>
+    </div>
+
+    <div class="jumbotron">
+        <button class="btn-danger text-center btns">Go Red</button>
+        <button class="btn-white text-center btns">Go White</button>
+        <button class="btn-primary text-center btns">Go Blue</button>
+    </div>
+
+    <script>
+        //grab the element(1)
+        const redBtn = document.querySelector('.btn-red')
+
+        const blueBtn = document.querySelector('.btn-blue')
+
+        const whiteBtn = document.querySelector('.btn-white')
+
+        const allbtns = document.querySelectorAll('.btns')
+        //do event listeners(2)
+        function goRed() {
+            document.body.style.backgroundColor = "#FF0000"
+            console.log('😉😉😉😋😊😀');
+        }
+        function goWhite() {
+            document.body.style.backgroundColor = "#FFFFFF"
+        }
+        function goBlue() {
+            document.body.style.backgroundColor = "#0000FF"
+        }
+        function goYellow() {
+            console.log('😂😂😂😂😂😂');
+            document.body.style.backgroundColor = "#FFF000"
+        }
+        //create function(3)
+        blueBtn.addEventListener('mouseover', goBlue)
+        blueBtn.addEventListener('mouseout', goWhite)
+        allbtns.forEach((btn) =>{btn.addEventListener('click', goYellow)})
+    
+    </script>
+</body>
+</html>

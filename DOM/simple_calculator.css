@@ -1,0 +1,66 @@
+
+.container{
+    padding: 20px;
+}
+.zero {
+    height:80px;
+    width:160px;
+    border-radius:40px;
+    font-size: xx-large;
+    color: white;
+    background-color:rgb(26, 25, 25);
+}
+.zero:hover, .num:hover{
+    background-color:rgb(53, 52, 52);
+    transition: 0.5s ease-in-out;
+}
+
+.placeholder {
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color:black;
+}
+.num{ 
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    font-size:xx-large;
+    color: white;
+    background-color:rgb(26, 25, 25);
+}
+.operator, .clear,.equal{
+    background-color: orange;
+    font-size: xx-large;
+    color: white;
+    height:80px;
+    width:80px;
+    border-radius:50%
+}
+.clear:hover{
+    background-color: rgb(248, 197, 103);
+    transition: 0.5s ease-in-out;
+}
+.equal:hover{
+    background-color: rgb(248, 197, 103);
+    transition: 0.5s ease-in-out;
+}
+.operator:hover{
+    background-color: rgb(248, 197, 103);
+    transition: 0.5s ease-in-out;
+}
+
+.container{
+    max-width: 400px;
+    border-radius: 5px;
+    margin: 10vh auto 0 auto;
+    background-color:black;
+    align-items: center;
+    box-shadow: 0px 0px 43px 17 rgb(48, 38, 38);
+}
+.value1, .value2, .opr, #num{
+    color: white;
+    font-size: 30px;
+}
